@@ -1,0 +1,22 @@
+hexdump - Display a file in hex+ASCII format
+
+Example:
+
+C:\>hexdump.exe LICENSE.txt
+00000000  20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20  |                |
+00000010  20 20 20 20 47 4e 55 20  47 45 4e 45 52 41 4c 20  |    GNU GENERAL |
+00000020  50 55 42 4c 49 43 20 4c  49 43 45 4e 53 45 0a 20  |PUBLIC LICENSE. |
+00000030  20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20  |                |
+00000040  20 20 20 20 20 20 56 65  72 73 69 6f 6e 20 32 2c  |      Version 2,|
+00000050  20 4a 75 6e 65 20 31 39  39 31 0a 0a 20 43 6f 70  | June 1991.. Cop|
+00000060  79 72 69 67 68 74 20 28  43 29 20 31 39 38 39 2c  |yright (C) 1989,|
+00000070  20 31 39 39 31 20 46 72  65 65 20 53 6f 66 74 77  | 1991 Free Softw|
+00000080  61 72 65 20 46 6f 75 6e  64 61 74 69 6f 6e 2c 20  |are Foundation, |
+00000090  49 6e 63 2e 2c 0a 20 35  31 20 46 72 61 6e 6b 6c  |Inc.,. 51 Frankl|
+                         <snip>
+
+C:\>hexdump.exe LICENSE.txt > out.dmp   ; Save output to file
+
+C:\>hexdump.exe LICENSE.txt | more      ; Show one screen at a time
+
+See also: UHEX, BIEW, DOSHEXED
