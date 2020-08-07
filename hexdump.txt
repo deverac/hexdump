@@ -1,6 +1,7 @@
-hexdump - Display a file in hex+ASCII format
+hexdump - Display a file in hex+ASCII format; or display Standard ASCII chart
+          or Extended ASCII chart.
 
-Example:
+Examples:
 
 C:\>hexdump.exe LICENSE.txt
 00000000  20 20 20 20 20 20 20 20  20 20 20 20 20 20 20 20  |                |
@@ -19,4 +20,10 @@ C:\>hexdump.exe LICENSE.txt > out.dmp   ; Save output to file
 
 C:\>hexdump.exe LICENSE.txt | more      ; Show one screen at a time
 
-See also: UHEX, BIEW, DOSHEXED
+C:\>hexdump.exe         ; Displays Standard ASCII chart that fits on one screen
+
+C:\>hexdump.exe /e      ; Displays Extended ASCII chart that fits on one screen
+
+
+
+See also: UHEX, BIEW, DOSHEXED, SVHEX, PG (H key)
