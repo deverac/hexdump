@@ -44,7 +44,7 @@ dumpfile( char * fname )
                 printf(" ");
             }
             asc[i%16] = (ch < 32 || ch > 126 ? '.' : ch);
-            printf("%02x ", ch);
+            printf("%02x ", (unsigned char)ch); // avoid sign-extension on 64-bit
             i++;
         }
         if (i % 16 > 0) {

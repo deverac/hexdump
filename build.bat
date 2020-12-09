@@ -34,7 +34,7 @@ goto end
 
     set PKG=pkg
     set GRP=devel
-    set NAM=hexd
+    set NAM=hexdump
     if exist %PKG%\NUL deltree /y %PKG% > NUL
     if exist hexdump.zip del hexdump.zip  > NUL
 
@@ -43,8 +43,8 @@ goto end
     set LSM=%PKG%\appinfo\hexdump.lsm
     echo Begin3> %LSM%
     echo Title:          %NAM%>> %LSM%
-    echo Version:        0.1>> %LSM%
-    echo Entered-date:   2020-07-21>> %LSM%
+    echo Version:        0.2>> %LSM%
+    echo Entered-date:   2020-12-09>> %LSM%
     echo Description:    Display a file in hex+ASCII format.>> %LSM%
     echo Keywords:       freedos %NAM%>> %LSM%
     echo Author:         >> %LSM%
