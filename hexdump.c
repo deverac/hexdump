@@ -417,7 +417,7 @@ print_page(options * opts )
         }
     }
 
-    if (! ((opts->page == PAGE_0) && opts->omit_chars)) {
+    if ((opts->page == PAGE_0) && !opts->omit_chars) {
         update_dos_screen(opts->omit_final_nl);
     }
 }
