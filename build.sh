@@ -9,7 +9,7 @@ if [ "$1" = "clean" ]; then
 
 elif [ "$1" = "hexd" ]; then
 
-    gcc hexdump.c -o hexd
+    gcc hexdump.c -o hexd -DLINUX
 
 elif [ "$1" = "zip" ]; then
 

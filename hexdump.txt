@@ -22,8 +22,11 @@ C:\>hexdump.exe LICENSE.txt | more      ; Show one screen at a time
 
 C:\>hexdump.exe         ; Displays Standard ASCII chart that fits on one screen
 
+C:\>hexdump.exe /a      ; Same as above
+
+C:\>hexdump.exe /b      ; When printing Standard ASCII chart, skips printing
+                        ; certain characters than may cause display issues.
+
 C:\>hexdump.exe /e      ; Displays Extended ASCII chart that fits on one screen
-
-
 
 See also: UHEX, BIEW, DOSHEXED, SVHEX, PG (H key)
